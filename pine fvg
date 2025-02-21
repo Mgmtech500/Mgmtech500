@@ -1,0 +1,46 @@
+//@version=5
+indicator("Fair Value Gap (FVG) Detector with Alerts", overlay=true)
+
+// Plotting Close Price (from "My script")
+plot(close, color=color.blue, title="Close Price")
+
+// User inputs
+fvg_lookback = input.int(50, "Lookback Period", minval=1)
+fvg_color_bullish = input.color(color.green, "Bullish FVG Color")
+fvg_color_bearish = input.color(color.red, "Bearish FVG Color")
+fvg_transparency = input.int(80, "FVG Transparency", minval=0, maxval=100)
+
+// Initialize variables for FVG detection
+var float upper_gap = na
+var float lower_gap = na
+
+// Loop through candles to detect FVG
+for i = 1 to fvg_lookback
+    high_prev1 = high[i]
+    low_prev1 = low[i]
+    high_prev2 = high[i + 1]
+    low_prev2 = low[i + 1]
+
+    // Detect Bullish FVG
+    if (low_prev1 > high_prev2)
+        upper_gap := low_prev1
+        lower_gap := high_prev2
+        box.new(bar_index[i], upper_gap, bar_index, lower_gap, border_color=fvg_color_bullish, bgcolor=color.new(fvg_color_bullish, fvg_transparency))
+
+    // Detect Bearish FVG
+    if (high_prev1 < low_prev2)
+        upper_gap := low_prev2
+        lower_gap := high_prev1
+        box.new(bar_index[i], upper_gap, bar_index, lower_gap, border_color=fvg_color_bearish, bgcolor=color.new(fvg_color_bearish, fvg_transparency))
+
+// Alert conditions
+bullish_fvg_entry = close <= upper_gap and close >= lower_gap and not na(upper_gap)
+bearish_fvg_entry = close <= upper_gap and close >= lower_gap and not na(lower_gap)
+
+// Plot shapes for FVG entries
+plotshape(bullish_fvg_entry, style=shape.triangleup, location=location.belowbar, color=fvg_color_bullish, size=size.tiny, title="Bullish FVG Entry")
+plotshape(bearish_fvg_entry, style=shape.triangledown, location=location.abovebar, color=fvg_color_bearish, size=size.tiny, title="Bearish FVG Entry")
+
+// Alerts
+alertcondition(bullish_fvg_entry, title="Bullish FVG Entry", message="Price has entered a Bullish Fair Value Gap.")
+alertcondition(bearish_fvg_entry, title="Bearish FVG Entry", message="Price has entered a Bearish Fair Value Gap.")
