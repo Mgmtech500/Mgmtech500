@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: FutureForesight_bot
+    env: python
+    plan: free
+    buildCommand: ""
+    startCommand: "python bot.py"
+    envVars:
+      - key: BOT_TOKEN
+        value: YOUR_BOT_TOKEN_HERE
