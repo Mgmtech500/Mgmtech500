@@ -32,7 +32,7 @@ He/Him
  Fun Fact
 A software engineer’s keyboard is my symphony—each keystroke is a note in the melody of code, much like a musician’s instrument or an artist’s brush. My favorite composition? A well-optimized trading bot that hums through the markets!
  My Toolkit
-Languages: Python, C++, JavaScript
+Languages: Python, C++, JavaScript, C, C++, Perl, PHP, C#, Java, Bash, AWK, SED, YAML, JSON, Assembly, 
 
 Frameworks & Libraries: alpaca-py, pandas, yfinance, tensorflow
 
