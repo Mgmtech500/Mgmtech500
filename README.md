@@ -63,3 +63,31 @@ Collaboration Appeal: Invites tech-driven partnerships, aligning with your desir
 
 Fun Fact: Retains your creative analogy, making the profile memorable.
 
+# Trading Automation Framework
+
+This repository contains a prototype framework for building automated financial trading and decision systems.
+
+The focus is on:
+- Reliable data ingestion from external APIs or market data sources
+- Signal generation and decision logic
+- Automated execution workflows
+- Logging, monitoring, and basic risk controls
+
+## Goals
+
+- Demonstrate experience designing and implementing trading system architectures
+- Show Python and scripting skills used to automate data pipelines and execution logic
+- Provide a foundation that can be extended for different asset classes or strategies
+
+## Tech / Skills Demonstrated
+
+- Python
+- API integration (REST / HTTP)
+- Data processing pipelines
+- Scheduling / automation
+- Logging and basic monitoring
+- Systems design for trading/decision systems
+
+## Notes
+
+This repository is for demonstration and educational purposes. It does not contain proprietary code or live trading logic.
