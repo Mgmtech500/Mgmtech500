@@ -2,7 +2,7 @@ GitHub Profile for @Mgmtech500
 
  Welcome to My Digital Workshop!
 I’m @Mgmtech500
-, a seasoned technologist with over four decades of engineering expertise since the mid-1980s. My journey spans the intricate worlds of finance, algorithmic trading, artificial intelligence, cloud computing, virtualization, operating systems, and automation. I thrive at the intersection of code and creativity, where technology transforms ideas into reality.
+, a seasoned engineer with over three decades of engineering expertise since the mid-1990s. My journey spans the intricate worlds of finance, algorithmic trading, artificial intelligence, cloud computing, virtualization, operating systems, and automation. I thrive at the intersection of code and creativity, where technology transforms ideas into reality.
  What Sparks My Curiosity
 Financial Markets & Algo Trading: Crafting intelligent bots that navigate the stock market with precision, leveraging tools like alpaca-py for bracket orders and real-time strategies.
 
@@ -23,9 +23,9 @@ I’m eager to team up on technology-driven projects. Whether it’s building tr
  Connect with Me
 GitHub: Explore my repositories and drop a star or issue!
 
-LinkedIn: Connect for professional discussions (update with your actual profile).
+LinkedIn: Connect for professional discussions https://linkedin.com/in/mgmtech
 
-Email: Reach out via GitHub Discussions or my contact form (for privacy, avoid public email).
+Email: Reach out via GitHub Discussions or my contact form mgmtech@gmail.com 
 
  Pronouns
 He/Him
@@ -36,7 +36,7 @@ Languages: Python, C++, JavaScript, C, C++, Perl, PHP, C#, Java, Bash, AWK, SED,
 
 Frameworks & Libraries: alpaca-py, pandas, yfinance, tensorflow
 
-Platforms: AWS, GCP, Docker, Kubernetes
+Platforms: AWS, GCP, Docker, Kubernetes, Unix, Linux, Windows Server, MAC OSX, iOS, VMWare
 
 Domains: Algorithmic Trading, AI, Cloud, Automation
 
@@ -51,7 +51,7 @@ Real-time market scanning with a three-bar pattern strategy.
 Robust logging and email alerts for seamless monitoring.
 
 Why This Profile Shines:
-Professional Tone: Balances enthusiasm with expertise, highlighting your 40+ years in engineering.
+Professional Tone: Balances enthusiasm with expertise, highlighting your 25+ years in engineering.
 
 Engaging Narrative: Uses emojis and concise sections to draw readers in, reflecting your passion for tech.
 
